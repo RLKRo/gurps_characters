@@ -392,7 +392,7 @@
 					"calc": {
 						"roll_range": "6-7",
 						"dr": {
-							"all": 0
+							"all": 2
 						}
 					}
 				},
@@ -407,7 +407,7 @@
 					"calc": {
 						"roll_range": "8",
 						"dr": {
-							"all": 0
+							"all": 2
 						}
 					}
 				},
@@ -422,7 +422,7 @@
 					"calc": {
 						"roll_range": "9-10",
 						"dr": {
-							"all": 0
+							"all": 2
 						}
 					}
 				},
@@ -452,7 +452,7 @@
 					"calc": {
 						"roll_range": "12",
 						"dr": {
-							"all": 0
+							"all": 2
 						}
 					}
 				},
@@ -467,7 +467,7 @@
 					"calc": {
 						"roll_range": "13-14",
 						"dr": {
-							"all": 0
+							"all": 2
 						}
 					}
 				},
@@ -527,7 +527,7 @@
 					"calc": {
 						"roll_range": "-",
 						"dr": {
-							"all": 0
+							"all": 2
 						}
 					}
 				}
@@ -535,7 +535,7 @@
 		}
 	},
 	"created_date": "Sep 17, 2022, 2:11 PM",
-	"modified_date": "Sep 17, 2022, 9:40 PM",
+	"modified_date": "Sep 24, 2022, 1:58 AM",
 	"profile": {
 		"player_name": "Egor",
 		"name": "Cornelius Hersberger",
@@ -2273,203 +2273,6 @@
 	],
 	"equipment": [
 		{
-			"type": "equipment_container",
-			"id": "8480ddf0-05aa-465d-9519-cd8d27452332",
-			"equipped": true,
-			"description": "Backpack, Small",
-			"tech_level": "1",
-			"value": "60",
-			"weight": "3 lb",
-			"reference": "DF1:23",
-			"calc": {
-				"extended_value": "222",
-				"extended_weight": "17.25 lb"
-			},
-			"prereqs": {
-				"type": "prereq_list",
-				"all": true,
-				"prereqs": [
-					{
-						"type": "contained_weight_prereq",
-						"has": true,
-						"qualifier": {
-							"compare": "at_most",
-							"qualifier": "40 lb"
-						}
-					}
-				]
-			},
-			"notes": "Holds 40 lbs of gear",
-			"categories": [
-				"Camping and Survival Gear"
-			],
-			"open": true,
-			"children": [
-				{
-					"type": "equipment",
-					"id": "7b35ccff-6b03-4daf-94e9-ac2126f78d62",
-					"equipped": true,
-					"quantity": 1,
-					"description": "Scribe's Kit",
-					"value": "50",
-					"weight": "2 lb",
-					"reference": "DF1:24",
-					"calc": {
-						"extended_value": "50",
-						"extended_weight": "2 lb"
-					},
-					"categories": [
-						"Writing Equipment"
-					]
-				},
-				{
-					"type": "equipment",
-					"id": "84de529e-3b41-4355-9bcb-6b82b8b67890",
-					"equipped": true,
-					"quantity": 1,
-					"description": "Paper, Heavy",
-					"value": "1",
-					"weight": "0.05 lb",
-					"reference": "DF1:24",
-					"calc": {
-						"extended_value": "1",
-						"extended_weight": "0.05 lb"
-					},
-					"categories": [
-						"Writing Equipment"
-					]
-				},
-				{
-					"type": "equipment",
-					"id": "385f4b02-6243-47e7-a139-1a618cf49a4e",
-					"equipped": true,
-					"quantity": 1,
-					"description": "Lantern",
-					"tech_level": "2",
-					"value": "20",
-					"weight": "2 lb",
-					"reference": "DF1:24",
-					"calc": {
-						"extended_value": "20",
-						"extended_weight": "2 lb"
-					},
-					"notes": "Uses 1 pint of oil per 24 hours,  2 yd",
-					"categories": [
-						"Light Sources"
-					]
-				},
-				{
-					"type": "equipment",
-					"id": "24bc6f58-d905-411f-9734-5139c8b3e651",
-					"equipped": true,
-					"quantity": 1,
-					"description": "Personal Basics",
-					"tech_level": "1",
-					"value": "5",
-					"weight": "1 lb",
-					"reference": "DF1:23",
-					"calc": {
-						"extended_value": "5",
-						"extended_weight": "1 lb"
-					},
-					"notes": "Basic EQ for individual Survival",
-					"categories": [
-						"Camping and Survival Gear"
-					]
-				},
-				{
-					"type": "equipment",
-					"id": "e43af7ac-9b14-40bb-b8f4-c00ce7edc8fa",
-					"equipped": true,
-					"quantity": 3,
-					"description": "Oil, Lantern, 1 Pint",
-					"tech_level": "2",
-					"value": "2",
-					"weight": "1 lb",
-					"reference": "DF1:24",
-					"calc": {
-						"extended_value": "6",
-						"extended_weight": "3 lb"
-					},
-					"categories": [
-						"Light Sources"
-					]
-				},
-				{
-					"type": "equipment",
-					"id": "fe5adb22-e3c8-4c8d-be34-0bd4eb17452e",
-					"equipped": true,
-					"quantity": 1,
-					"description": "Blanket",
-					"tech_level": "1",
-					"value": "20",
-					"weight": "4 lb",
-					"reference": "B288",
-					"calc": {
-						"extended_value": "20",
-						"extended_weight": "4 lb"
-					},
-					"categories": [
-						"Camping and Survival Gear"
-					]
-				},
-				{
-					"type": "equipment",
-					"id": "6a3db2f1-531b-4a1c-a9e4-6c845b6ff775",
-					"equipped": true,
-					"quantity": 1,
-					"description": "First Aid Kit",
-					"value": "50",
-					"weight": "2 lb",
-					"reference": "DF1:24",
-					"calc": {
-						"extended_value": "50",
-						"extended_weight": "2 lb"
-					},
-					"notes": "+1 to First Aid",
-					"categories": [
-						"Medical Gear"
-					]
-				},
-				{
-					"type": "equipment",
-					"id": "6ba5ea7b-39ec-46ad-b6e5-0eefdb4a4ab9",
-					"equipped": true,
-					"quantity": 1,
-					"description": "Harmonica (Губная гармошка)",
-					"value": "5",
-					"weight": "0.1 lb",
-					"reference": "DF1:24",
-					"calc": {
-						"extended_value": "5",
-						"extended_weight": "0.1 lb"
-					},
-					"notes": "For playing",
-					"categories": [
-						"Musical Instruments"
-					]
-				},
-				{
-					"type": "equipment",
-					"id": "6a4e5156-19d1-479e-9d8c-88d92d6d738a",
-					"equipped": true,
-					"quantity": 1,
-					"description": "Pipe",
-					"value": "5",
-					"weight": "0.1 lb",
-					"reference": "DF1:24",
-					"calc": {
-						"extended_value": "5",
-						"extended_weight": "0.1 lb"
-					},
-					"notes": "For smoking",
-					"categories": [
-						"Misc"
-					]
-				}
-			]
-		},
-		{
 			"type": "equipment",
 			"id": "c5648183-ca7e-47b4-9141-875ba3b897a0",
 			"equipped": true,
@@ -2493,8 +2296,8 @@
 					"parry": "0F",
 					"block": "No",
 					"calc": {
-						"level": 13,
-						"parry": "9F",
+						"level": 12,
+						"parry": "8F",
 						"block": "No",
 						"damage": "1d-1 imp"
 					},
@@ -2540,6 +2343,244 @@
 			},
 			"categories": [
 				"Melee Weapon"
+			]
+		},
+		{
+			"type": "equipment_container",
+			"id": "8480ddf0-05aa-465d-9519-cd8d27452332",
+			"equipped": true,
+			"description": "Backpack, Small",
+			"tech_level": "1",
+			"value": "60",
+			"weight": "3 lb",
+			"reference": "DF1:23",
+			"calc": {
+				"extended_value": "222",
+				"extended_weight": "17.25 lb"
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "contained_weight_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": "40 lb"
+						}
+					}
+				]
+			},
+			"notes": "Holds 40 lbs of gear",
+			"categories": [
+				"Camping and Survival Gear"
+			],
+			"open": true,
+			"children": [
+				{
+					"type": "equipment",
+					"id": "6a3db2f1-531b-4a1c-a9e4-6c845b6ff775",
+					"equipped": true,
+					"quantity": 1,
+					"description": "First Aid Kit",
+					"value": "50",
+					"weight": "2 lb",
+					"reference": "DF1:24",
+					"calc": {
+						"extended_value": "50",
+						"extended_weight": "2 lb"
+					},
+					"notes": "+1 to First Aid",
+					"categories": [
+						"Medical Gear"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "7b35ccff-6b03-4daf-94e9-ac2126f78d62",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Scribe's Kit",
+					"value": "50",
+					"weight": "2 lb",
+					"reference": "DF1:24",
+					"calc": {
+						"extended_value": "50",
+						"extended_weight": "2 lb"
+					},
+					"categories": [
+						"Writing Equipment"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "fe5adb22-e3c8-4c8d-be34-0bd4eb17452e",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Blanket",
+					"tech_level": "1",
+					"value": "20",
+					"weight": "4 lb",
+					"reference": "B288",
+					"calc": {
+						"extended_value": "20",
+						"extended_weight": "4 lb"
+					},
+					"categories": [
+						"Camping and Survival Gear"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "385f4b02-6243-47e7-a139-1a618cf49a4e",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Lantern",
+					"tech_level": "2",
+					"value": "20",
+					"weight": "2 lb",
+					"reference": "DF1:24",
+					"calc": {
+						"extended_value": "20",
+						"extended_weight": "2 lb"
+					},
+					"notes": "Uses 1 pint of oil per 24 hours,  2 yd",
+					"categories": [
+						"Light Sources"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "e43af7ac-9b14-40bb-b8f4-c00ce7edc8fa",
+					"equipped": true,
+					"quantity": 3,
+					"description": "Oil, Lantern, 1 Pint",
+					"tech_level": "2",
+					"value": "2",
+					"weight": "1 lb",
+					"reference": "DF1:24",
+					"calc": {
+						"extended_value": "6",
+						"extended_weight": "3 lb"
+					},
+					"categories": [
+						"Light Sources"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "6ba5ea7b-39ec-46ad-b6e5-0eefdb4a4ab9",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Harmonica (Губная гармошка)",
+					"value": "5",
+					"weight": "0.1 lb",
+					"reference": "DF1:24",
+					"calc": {
+						"extended_value": "5",
+						"extended_weight": "0.1 lb"
+					},
+					"notes": "For playing",
+					"categories": [
+						"Musical Instruments"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "24bc6f58-d905-411f-9734-5139c8b3e651",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Personal Basics",
+					"tech_level": "1",
+					"value": "5",
+					"weight": "1 lb",
+					"reference": "DF1:23",
+					"calc": {
+						"extended_value": "5",
+						"extended_weight": "1 lb"
+					},
+					"notes": "Basic EQ for individual Survival",
+					"categories": [
+						"Camping and Survival Gear"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "6a4e5156-19d1-479e-9d8c-88d92d6d738a",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Pipe",
+					"value": "5",
+					"weight": "0.1 lb",
+					"reference": "DF1:24",
+					"calc": {
+						"extended_value": "5",
+						"extended_weight": "0.1 lb"
+					},
+					"notes": "For smoking",
+					"categories": [
+						"Misc"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "84de529e-3b41-4355-9bcb-6b82b8b67890",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Paper, Heavy",
+					"value": "1",
+					"weight": "0.05 lb",
+					"reference": "DF1:24",
+					"calc": {
+						"extended_value": "1",
+						"extended_weight": "0.05 lb"
+					},
+					"categories": [
+						"Writing Equipment"
+					]
+				}
+			]
+		},
+		{
+			"type": "equipment",
+			"id": "75902b25-c8bb-44a1-9658-fa313ecf3e55",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Buff Coat (Leather)",
+			"tech_level": "4",
+			"value": "210",
+			"weight": "16 lb",
+			"reference": "B283",
+			"calc": {
+				"extended_value": "210",
+				"extended_weight": "16 lb"
+			},
+			"features": [
+				{
+					"type": "dr_bonus",
+					"amount": 2,
+					"location": "torso"
+				},
+				{
+					"type": "dr_bonus",
+					"amount": 2,
+					"location": "vitals"
+				},
+				{
+					"type": "dr_bonus",
+					"amount": 2,
+					"location": "arm"
+				},
+				{
+					"type": "dr_bonus",
+					"amount": 2,
+					"location": "leg"
+				}
+			],
+			"notes": "Flexible",
+			"categories": [
+				"Body Armor"
 			]
 		}
 	],
