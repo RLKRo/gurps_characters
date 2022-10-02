@@ -535,7 +535,7 @@
 		}
 	},
 	"created_date": "Sep 17, 2022, 8:07 PM",
-	"modified_date": "Sep 18, 2022, 2:41 PM",
+	"modified_date": "Sep 24, 2022, 4:43 PM",
 	"profile": {
 		"player_name": "Sergey",
 		"name": "Oliver Schwartzman",
@@ -1713,6 +1713,41 @@
 				"Business",
 				"Scholarly",
 				"Social"
+			]
+		},
+		{
+			"type": "skill",
+			"id": "1f61e9ac-3840-4b3f-b9da-bdbb74a33cc6",
+			"name": "Riding",
+			"reference": "B217",
+			"specialization": "Horse",
+			"difficulty": "dx/a",
+			"points": 1,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "DX-1"
+			},
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Animal Handling",
+					"specialization": "Horse",
+					"modifier": -3
+				}
+			],
+			"categories": [
+				"Animal"
 			]
 		},
 		{

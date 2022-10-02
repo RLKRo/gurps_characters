@@ -535,7 +535,7 @@
 		}
 	},
 	"created_date": "Sep 17, 2022, 8:07 PM",
-	"modified_date": "Sep 17, 2022, 10:00 PM",
+	"modified_date": "Oct 2, 2022, 11:45 AM",
 	"profile": {
 		"player_name": "Vova",
 		"name": "Den Snoo",
@@ -2966,7 +2966,8 @@
 			"calc": {
 				"level": 15,
 				"rsl": "IQ+1"
-			}
+			},
+			"notes": "Keywords: Area (Leveled).\nFull Cost: 42 points for level 1 + 12.5 points/additional\nlevel*.\nCasting Roll: None. Use IQ or Artist (Illusion) to determine\nhow convincing it is.\nRange: 100 yards.\nDuration: Indefinite.\nYou can create an illusion anywhere that you can see within\n100 yards; see Area (p. 9) for the size. It affects hearing as well\nas vision, but special senses such as Infravision or Vibration\nSense are not fooled. You must win a Quick Contest of IQ – or\nArtist (Illusion), if better – against the Per of anyone you want\nto fool; otherwise they notice something “off.” Do not apply\nrange penalties to your roll. Their roll is at +4 if they have\nreason to be alert for illusions or +10 if you made it appear\nfrom out of nowhere. However, even if they successfully “disbelieve,” your illusion doesn’t disappear. Thus, even an\nobvious illusion can be useful to block line of sight or act as\nwhite noise to mask quiet conversation.\nYou must concentrate to change the illusion or to have\nit behave “intelligently” (e.g., to make an illusionary person\ntalk). Without concentration, it will conform to your expecta-\ntions for how it should behave; e.g., an illusionary wolf will\nshy from a torch or snarl if someone comes close."
 		},
 		{
 			"type": "spell",
@@ -2982,7 +2983,8 @@
 			"calc": {
 				"level": 15,
 				"rsl": "IQ+1"
-			}
+			},
+			"notes": " Keywords: Buff, Area (Leveled).\nFull Cost: 40 points for level 1 + 12.5 points/additional level*.\nCasting Roll: None. Use Innate Attack (Gaze) to aim. Use IQ or Artist (Illusion) to determine how convincing the illusion is.\nRange: 100 yards.\nDuration: 3 minutes.\n\nThis illusion makes a chosen creature look, sound, and feel different, but it doesn’t fool special senses like Infravision or Vibration Sense. The base creature must be of the appropriate size and shape. The base creature must be wholly covered by the spell’s area of effect (see Area; Sorcery, p. 9).\nYou must win a Quick Contest of IQ – or Artist (Illusion), if better – against the Per of anyone you want to fool; otherwise they notice something “off.” Do not apply range penalties to your roll. Their roll is at +4 if they have reason to be alert for illusions or +10 if you made it appear from out of nowhere. However, even if they successfully “disbelieve,” your illusion doesn’t disappear. Thus, even an obvious illusion can be useful to disguise the creature.\nThe illusion may be disbelieved, but is otherwise stable. However, it will not move about unless the underlying object moves. Damage done by the underlying creature is unaffected. For example, an illusion disguise of a golem could be cast over a human. The subject would feel and look like a golem, but still would hit like a human! Concentration is not required to maintain the illusion."
 		}
 	],
 	"equipment": [

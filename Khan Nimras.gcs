@@ -535,7 +535,7 @@
 		}
 	},
 	"created_date": "Sep 17, 2022, 5:01 PM",
-	"modified_date": "Sep 17, 2022, 9:48 PM",
+	"modified_date": "Oct 2, 2022, 11:44 AM",
 	"profile": {
 		"player_name": "Sergey",
 		"name": "Khan Nimras",
@@ -2109,7 +2109,8 @@
 			"calc": {
 				"level": 11,
 				"rsl": "IQ-2"
-			}
+			},
+			"notes": "Keywords: None.\nFull Cost: 1 or 4 points.\nCasting Roll: None. Use Innate Attack (Gaze) to aim the\nimproved version.\nRange: Touch or 100 yards.\nDuration: Instantaneous.\nThe basic (1-point) version of this spell must be cast on a\nsubject you are holding or touching and staring intently at. The\nimproved (4-point) one may be cast at a distance, using Innate\nAttack (Gaze) for targeting; in theory, this can be dodged, but\nthe subject must have some way to know it’s coming.\nConsult Making Things Burn (p. B433) – a target rated from\nSuper-Flammable to Resistant ignites immediately. Anything\nmore resistant to fire may catch if this spell is cast repeatedly\nand continuously. Roll 3d after every 10 seconds of uninter-\nrupted casting; Highly Resistant materials (including flesh)\ncatch on a 16 or less, while Nonflammable ones catch only on\na 6 or less.\nThis spell does no actual damage to the object, though it\nwill likely take damage from the resultant fire."
 		},
 		{
 			"type": "spell",
@@ -2125,7 +2126,8 @@
 			"calc": {
 				"level": 13,
 				"rsl": "IQ+0"
-			}
+			},
+			"notes": "Air Jet\nKeywords: Jet, Obvious.\nFull Cost: 6 points/level.\nCasting Roll: None. Use Innate Attack (Beam) to hit.\nRange: 20 yards.\nDuration: Instantaneous.\nYou shoot a thin jet of air from your fingertip, which can\nstrike any target up to 20 yards away (without range or speed\npenalties). It can be dodged or blocked, but not parried. This\njet does 1d crushing damage per level, doubled, for the pur-\nposes of knockback only. It can also snuff out candles, sweep\nthe floor, and so on.\nAgainst enemies with Injury Tolerance (Diffuse), such as\ngaseous beings and swarms, this becomes a much more potent\nattack, doing full damage – including the doubling! Ignore the\nusual injury cap of 2 HP (Injury to Unliving, Homogenous, and\nDiffuse Targets, p. B380)."
 		},
 		{
 			"type": "spell",
@@ -2141,7 +2143,8 @@
 			"calc": {
 				"level": 13,
 				"rsl": "IQ+0"
-			}
+			},
+			"notes": "Minor Healing\n Keywords: None.\nFull Cost: 32 points.\nCasting Roll: IQ.\nRange: Touch.\nDuration: Instantaneous.\nBy making physical contact with a subject, you may\n immediately heal him 1d HP. This also automatically stops\n any bleeding. You may heal subjects of your own race and any “similar” races (GM’s call); e.g., a human can heal other\n humans but not dogs or plants.\n Your casting roll is at ‐2 if the subject is unconscious. In\n addition, if used more than once per day on a given subject,\n you are at a cumulative ‐3 per successful healing. Failure costs\nyou 1d FP instead of the usual 1 FP! "
 		},
 		{
 			"type": "spell",
@@ -2157,7 +2160,8 @@
 			"calc": {
 				"level": 13,
 				"rsl": "IQ+0"
-			}
+			},
+			"notes": "Gift of Tongues\nKeywords: Buff.\nFull Cost: 28 points.\nCasting Roll: None. Use Innate Attack\n(Gaze) to aim.\nRange: 100 yards.\n Duration: 30 minutes.\n For the duration, the subject speaks\n and understands one spoken language,\n chosen when you cast the spell. You do\n not have to speak the language – in fact,\n this is an excellent way to get around\n that problem! However, the GM is within\n rights to declare certain languages\n “secret” or “lost” and thus unavailable\n unless you first learn the language (to at\nleast Broken) legitimately."
 		}
 	],
 	"equipment": [
