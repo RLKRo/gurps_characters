@@ -535,7 +535,7 @@
 		}
 	},
 	"created_date": "Sep 17, 2022, 5:01 PM",
-	"modified_date": "Oct 2, 2022, 11:44 AM",
+	"modified_date": "Oct 16, 2022, 1:14 PM",
 	"profile": {
 		"player_name": "Sergey",
 		"name": "Khan Nimras",
@@ -677,7 +677,7 @@
 			}
 		}
 	],
-	"total_points": 160,
+	"total_points": 164,
 	"advantages": [
 		{
 			"type": "advantage_container",
@@ -1232,34 +1232,6 @@
 	"skills": [
 		{
 			"type": "skill",
-			"id": "82ea2724-39b6-49f4-be8d-4e6c1faade59",
-			"name": "Thaumatology",
-			"reference": "B225",
-			"difficulty": "iq/vh",
-			"points": 2,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -7,
-				"level": 6,
-				"adjusted_level": 6,
-				"points": -6
-			},
-			"calc": {
-				"level": 11,
-				"rsl": "IQ-2"
-			},
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -7
-				}
-			],
-			"categories": [
-				"Occult/Magical"
-			]
-		},
-		{
-			"type": "skill",
 			"id": "e081263c-1508-4f4b-b5d0-303c40e01463",
 			"name": "Alchemy",
 			"reference": "B174",
@@ -1273,6 +1245,242 @@
 			"categories": [
 				"Natural Science",
 				"Occult/Magical"
+			]
+		},
+		{
+			"type": "skill",
+			"id": "e38d89c6-a932-466a-9e38-52323a7e2516",
+			"name": "Boating",
+			"reference": "B180",
+			"specialization": "Sailboat",
+			"tech_level": "4",
+			"difficulty": "dx/a",
+			"points": 4,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "DX+1"
+			},
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -5
+				},
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Boating",
+					"specialization": "Large Powerboat",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Boating",
+					"specialization": "Motorboat",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Boating",
+					"specialization": "Unpowered",
+					"modifier": -3
+				}
+			],
+			"categories": [
+				"Vehicle"
+			]
+		},
+		{
+			"type": "skill",
+			"id": "5e389588-6941-4257-a040-17078aba538a",
+			"name": "Body Language",
+			"reference": "B181",
+			"difficulty": "per/a",
+			"points": 1,
+			"defaulted_from": {
+				"type": "skill",
+				"name": "Detect Lies",
+				"modifier": -4,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "Per-1"
+			},
+			"defaults": [
+				{
+					"type": "skill",
+					"name": "Detect Lies",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Psychology",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Police",
+				"Social",
+				"Spy"
+			]
+		},
+		{
+			"type": "skill",
+			"id": "9624c6ab-74fd-4dbe-8bd9-a37ca22bc356",
+			"name": "Brawling",
+			"reference": "B182,MA55",
+			"difficulty": "dx/e",
+			"points": 1,
+			"calc": {
+				"level": 11,
+				"rsl": "DX+0"
+			},
+			"features": [
+				{
+					"type": "weapon_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Brawling"
+					},
+					"level": {
+						"compare": "at_least",
+						"qualifier": 2
+					}
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"id": "13d5c082-dcae-40c3-9a96-8dcc108f1b86",
+			"name": "Climbing",
+			"reference": "B183",
+			"encumbrance_penalty_multiplier": 1,
+			"difficulty": "dx/a",
+			"points": 1,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -5,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
+			},
+			"calc": {
+				"level": 10,
+				"rsl": "DX-1"
+			},
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Athletic",
+				"Criminal/Street",
+				"Outdoor/Exploration"
+			]
+		},
+		{
+			"type": "skill",
+			"id": "e4dc4d75-972e-448a-a913-766d7f135d50",
+			"name": "Detect Lies",
+			"reference": "B187",
+			"difficulty": "per/h",
+			"points": 4,
+			"defaulted_from": {
+				"type": "per",
+				"modifier": -6,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 13,
+				"rsl": "Per+0"
+			},
+			"defaults": [
+				{
+					"type": "per",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "Body Language",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Psychology",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Police",
+				"Social",
+				"Spy"
+			]
+		},
+		{
+			"type": "skill",
+			"id": "512dae8c-1a5d-4d7c-bcd4-152cb830276b",
+			"name": "Diagnosis",
+			"reference": "B187",
+			"tech_level": "4",
+			"difficulty": "iq/h",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -6,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "IQ-2"
+			},
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "First Aid",
+					"modifier": -8
+				},
+				{
+					"type": "skill",
+					"name": "Physician",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Veterinary",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Medical"
 			]
 		},
 		{
@@ -1320,37 +1528,6 @@
 		},
 		{
 			"type": "skill",
-			"id": "47952050-b626-4af0-8520-2b3330c9abf0",
-			"name": "Savoir-Faire",
-			"reference": "B218,MA59",
-			"specialization": "Police",
-			"difficulty": "iq/e",
-			"points": 2,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -4,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
-			},
-			"calc": {
-				"level": 13,
-				"rsl": "IQ+0"
-			},
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -4
-				}
-			],
-			"categories": [
-				"Knowledge",
-				"Police",
-				"Social"
-			]
-		},
-		{
-			"type": "skill",
 			"id": "ff842a98-df23-43fd-8800-997992edeb3e",
 			"name": "Gambling",
 			"reference": "B197",
@@ -1386,31 +1563,91 @@
 		},
 		{
 			"type": "skill",
-			"id": "e4dc4d75-972e-448a-a913-766d7f135d50",
-			"name": "Detect Lies",
-			"reference": "B187",
-			"difficulty": "per/h",
-			"points": 4,
+			"id": "07f6ab0c-59fc-49a1-9319-cc4c81cbb678",
+			"name": "Herb Lore",
+			"reference": "B199",
+			"tech_level": "4",
+			"difficulty": "iq/vh",
+			"points": 1,
+			"calc": {
+				"level": 10,
+				"rsl": "IQ-3"
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "contains",
+							"qualifier": "naturalist"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Plant"
+			]
+		},
+		{
+			"type": "skill",
+			"id": "02b72f10-01f0-4f50-903e-b097cb8216fb",
+			"name": "Hiking",
+			"reference": "B200",
+			"difficulty": "ht/a",
+			"points": 1,
 			"defaulted_from": {
-				"type": "per",
-				"modifier": -6,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
+				"type": "ht",
+				"modifier": -5,
+				"level": 5,
+				"adjusted_level": 5,
+				"points": -5
 			},
 			"calc": {
-				"level": 13,
-				"rsl": "Per+0"
+				"level": 9,
+				"rsl": "HT-1"
 			},
 			"defaults": [
 				{
-					"type": "per",
-					"modifier": -6
+					"type": "ht",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Athletic",
+				"Outdoor/Exploration"
+			]
+		},
+		{
+			"type": "skill",
+			"id": "0516e1bb-74b3-4e63-b5ce-8319c5a83050",
+			"name": "Interrogation",
+			"reference": "B202",
+			"difficulty": "iq/a",
+			"points": 4,
+			"defaulted_from": {
+				"type": "skill",
+				"name": "Intimidation",
+				"modifier": -3,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
+			"calc": {
+				"level": 14,
+				"rsl": "IQ+1"
+			},
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
 				},
 				{
 					"type": "skill",
-					"name": "Body Language",
-					"modifier": -4
+					"name": "Intimidation",
+					"modifier": -3
 				},
 				{
 					"type": "skill",
@@ -1419,121 +1656,96 @@
 				}
 			],
 			"categories": [
+				"Military",
 				"Police",
-				"Social",
 				"Spy"
 			]
 		},
 		{
 			"type": "skill",
-			"id": "4d250d76-4c6b-43bd-b93c-0b97ef8b1f7a",
-			"name": "Fishing",
-			"reference": "B195",
-			"difficulty": "per/e",
-			"points": 4,
-			"defaulted_from": {
-				"type": "per",
-				"modifier": -4,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
-			},
-			"calc": {
-				"level": 15,
-				"rsl": "Per+2"
-			},
-			"defaults": [
-				{
-					"type": "per",
-					"modifier": -4
-				}
-			],
-			"categories": [
-				"Outdoor/Exploration"
-			]
-		},
-		{
-			"type": "skill",
-			"id": "83e87086-6bd0-43d7-80b1-554d5c32cfb8",
-			"name": "Survival",
-			"reference": "B223",
-			"specialization": "Salt-Water Sea",
-			"difficulty": "per/a",
+			"id": "d7d46916-fbee-4cc0-a7cb-300f2f88ef16",
+			"name": "Intimidation",
+			"reference": "B202",
+			"difficulty": "will/a",
 			"points": 1,
 			"defaulted_from": {
-				"type": "per",
+				"type": "will",
 				"modifier": -5,
 				"level": 8,
 				"adjusted_level": 8,
 				"points": -8
 			},
 			"calc": {
-				"level": 12,
-				"rsl": "Per-1"
+				"level": 11,
+				"rsl": "Will-2"
 			},
 			"defaults": [
 				{
-					"type": "per",
+					"type": "will",
 					"modifier": -5
 				},
 				{
 					"type": "skill",
-					"name": "Naturalist",
+					"name": "Acting",
 					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": "Survival",
-					"specialization": "Bank",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Survival",
-					"specialization": "Deep Ocean Vent",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Survival",
-					"specialization": "Fresh-Water Lake",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Survival",
-					"specialization": "Open Ocean",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Survival",
-					"specialization": "Reef",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Survival",
-					"specialization": "River/Stream",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Survival",
-					"specialization": "Tropical Lagoon",
-					"modifier": -4
 				}
 			],
 			"categories": [
-				"Outdoor/Exploration"
+				"Criminal/Street",
+				"Police",
+				"Social"
 			]
 		},
 		{
 			"type": "skill",
-			"id": "512dae8c-1a5d-4d7c-bcd4-152cb830276b",
-			"name": "Diagnosis",
-			"reference": "B187",
-			"tech_level": "4",
+			"id": "e1dd3adf-4b2c-4648-9b67-13a63bab5d02",
+			"name": "Knife",
+			"reference": "B208",
+			"difficulty": "dx/e",
+			"points": 4,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -4,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 13,
+				"rsl": "DX+2"
+			},
+			"defaults": [
+				{
+					"type": "skill",
+					"name": "Force Sword",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Main-Gauche",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Shortsword",
+					"modifier": -3
+				},
+				{
+					"type": "dx",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"id": "5e8bfe86-0b54-4e88-bf42-05a84ca0c486",
+			"name": "Naturalist",
+			"reference": "B211",
+			"specialization": "Earthlike",
 			"difficulty": "iq/h",
 			"points": 1,
 			"defaulted_from": {
@@ -1554,22 +1766,158 @@
 				},
 				{
 					"type": "skill",
-					"name": "First Aid",
-					"modifier": -8
+					"name": "Biology",
+					"modifier": -3
+				}
+			],
+			"categories": [
+				"Animal",
+				"Natural Science",
+				"Outdoor/Exploration",
+				"Plant"
+			]
+		},
+		{
+			"type": "skill",
+			"id": "6a32fd25-b317-4576-907b-4cc66d491189",
+			"name": "Navigation",
+			"reference": "B211",
+			"specialization": "Land",
+			"tech_level": "4",
+			"difficulty": "iq/a",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "IQ-1"
+			},
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
 				},
 				{
 					"type": "skill",
-					"name": "Physician",
+					"name": "Cartography",
 					"modifier": -4
 				},
 				{
 					"type": "skill",
-					"name": "Veterinary",
+					"name": "Mathematics",
+					"specialization": "Surveying",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Navigation",
+					"specialization": "Air",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Navigation",
+					"specialization": "Sea",
+					"modifier": -2
+				}
+			],
+			"categories": [
+				"Outdoor/Exploration",
+				"Technical",
+				"Vehicle"
+			]
+		},
+		{
+			"type": "skill",
+			"id": "d0c46793-4b27-4ae8-b316-a555ad015334",
+			"name": "Navigation",
+			"reference": "B211",
+			"specialization": "Sea",
+			"tech_level": "4",
+			"difficulty": "iq/a",
+			"points": 1,
+			"defaulted_from": {
+				"type": "skill",
+				"name": "Navigation",
+				"specialization": "Land",
+				"modifier": -2,
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "IQ-1"
+			},
+			"defaults": [
+				{
+					"type": "skill",
+					"name": "Astronomy",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Seamanship",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Navigation",
+					"specialization": "Air",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Navigation",
+					"specialization": "Land",
+					"modifier": -2
+				}
+			],
+			"categories": [
+				"Outdoor/Exploration",
+				"Technical",
+				"Vehicle"
+			]
+		},
+		{
+			"type": "skill",
+			"id": "daf27f9e-20bb-4298-a0b5-fc505f67b52f",
+			"name": "Observation",
+			"reference": "B211",
+			"difficulty": "per/a",
+			"points": 1,
+			"defaulted_from": {
+				"type": "per",
+				"modifier": -5,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "Per-1"
+			},
+			"defaults": [
+				{
+					"type": "per",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Shadowing",
 					"modifier": -5
 				}
 			],
 			"categories": [
-				"Medical"
+				"Criminal/Street",
+				"Military",
+				"Police",
+				"Spy"
 			]
 		},
 		{
@@ -1682,80 +2030,42 @@
 		},
 		{
 			"type": "skill",
-			"id": "07f6ab0c-59fc-49a1-9319-cc4c81cbb678",
-			"name": "Herb Lore",
-			"reference": "B199",
-			"tech_level": "4",
-			"difficulty": "iq/vh",
-			"points": 1,
-			"calc": {
-				"level": 10,
-				"rsl": "IQ-3"
-			},
-			"prereqs": {
-				"type": "prereq_list",
-				"all": true,
-				"prereqs": [
-					{
-						"type": "skill_prereq",
-						"has": true,
-						"name": {
-							"compare": "contains",
-							"qualifier": "naturalist"
-						}
-					}
-				]
-			},
-			"categories": [
-				"Plant"
-			]
-		},
-		{
-			"type": "skill",
-			"id": "5e8bfe86-0b54-4e88-bf42-05a84ca0c486",
-			"name": "Naturalist",
-			"reference": "B211",
-			"specialization": "Earthlike",
-			"difficulty": "iq/h",
-			"points": 1,
+			"id": "47952050-b626-4af0-8520-2b3330c9abf0",
+			"name": "Savoir-Faire",
+			"reference": "B218,MA59",
+			"specialization": "Police",
+			"difficulty": "iq/e",
+			"points": 2,
 			"defaulted_from": {
 				"type": "iq",
-				"modifier": -6,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
+				"modifier": -4,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
-				"level": 11,
-				"rsl": "IQ-2"
+				"level": 13,
+				"rsl": "IQ+0"
 			},
 			"defaults": [
 				{
 					"type": "iq",
-					"modifier": -6
-				},
-				{
-					"type": "skill",
-					"name": "Biology",
-					"modifier": -3
+					"modifier": -4
 				}
 			],
 			"categories": [
-				"Animal",
-				"Natural Science",
-				"Outdoor/Exploration",
-				"Plant"
+				"Knowledge",
+				"Police",
+				"Social"
 			]
 		},
 		{
 			"type": "skill",
-			"id": "e38d89c6-a932-466a-9e38-52323a7e2516",
-			"name": "Boating",
-			"reference": "B180",
-			"specialization": "Sailboat",
-			"tech_level": "4",
-			"difficulty": "dx/a",
-			"points": 4,
+			"id": "2a04f5d1-c3a7-4a0b-95cb-ce0a8099d663",
+			"name": "Shadowing",
+			"reference": "B219",
+			"difficulty": "iq/a",
+			"points": 1,
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
@@ -1765,68 +2075,103 @@
 			},
 			"calc": {
 				"level": 12,
-				"rsl": "DX+1"
+				"rsl": "IQ-1"
 			},
 			"defaults": [
-				{
-					"type": "dx",
-					"modifier": -5
-				},
 				{
 					"type": "iq",
 					"modifier": -5
 				},
 				{
 					"type": "skill",
-					"name": "Boating",
-					"specialization": "Large Powerboat",
+					"name": "Observation",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Stealth",
 					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Boating",
-					"specialization": "Motorboat",
-					"modifier": -3
-				},
-				{
-					"type": "skill",
-					"name": "Boating",
-					"specialization": "Unpowered",
-					"modifier": -3
 				}
 			],
 			"categories": [
-				"Vehicle"
+				"Criminal/Street",
+				"Police",
+				"Spy"
 			]
 		},
 		{
 			"type": "skill",
-			"id": "13d5c082-dcae-40c3-9a96-8dcc108f1b86",
-			"name": "Climbing",
-			"reference": "B183",
-			"encumbrance_penalty_multiplier": 1,
-			"difficulty": "dx/a",
+			"id": "83e87086-6bd0-43d7-80b1-554d5c32cfb8",
+			"name": "Survival",
+			"reference": "B223",
+			"specialization": "Salt-Water Sea",
+			"difficulty": "per/a",
 			"points": 1,
 			"defaulted_from": {
-				"type": "dx",
+				"type": "per",
 				"modifier": -5,
-				"level": 6,
-				"adjusted_level": 6,
-				"points": -6
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
 			},
 			"calc": {
-				"level": 10,
-				"rsl": "DX-1"
+				"level": 12,
+				"rsl": "Per-1"
 			},
 			"defaults": [
 				{
-					"type": "dx",
+					"type": "per",
 					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Naturalist",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "Bank",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "Deep Ocean Vent",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "Fresh-Water Lake",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "Open Ocean",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "Reef",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "River/Stream",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Survival",
+					"specialization": "Tropical Lagoon",
+					"modifier": -4
 				}
 			],
 			"categories": [
-				"Athletic",
-				"Criminal/Street",
 				"Outdoor/Exploration"
 			]
 		},
@@ -1862,200 +2207,30 @@
 		},
 		{
 			"type": "skill",
-			"id": "02b72f10-01f0-4f50-903e-b097cb8216fb",
-			"name": "Hiking",
-			"reference": "B200",
-			"difficulty": "ht/a",
-			"points": 1,
-			"defaulted_from": {
-				"type": "ht",
-				"modifier": -5,
-				"level": 5,
-				"adjusted_level": 5,
-				"points": -5
-			},
-			"calc": {
-				"level": 9,
-				"rsl": "HT-1"
-			},
-			"defaults": [
-				{
-					"type": "ht",
-					"modifier": -5
-				}
-			],
-			"categories": [
-				"Athletic",
-				"Outdoor/Exploration"
-			]
-		},
-		{
-			"type": "skill",
-			"id": "5855fc2a-3b12-4602-a0b3-0e20e413a955",
-			"name": "Weather Sense",
-			"reference": "B209",
-			"tech_level": "4",
-			"difficulty": "iq/a",
-			"points": 1,
+			"id": "82ea2724-39b6-49f4-be8d-4e6c1faade59",
+			"name": "Thaumatology",
+			"reference": "B225",
+			"difficulty": "iq/vh",
+			"points": 2,
 			"defaulted_from": {
 				"type": "iq",
-				"modifier": -5,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
+				"modifier": -7,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
 			},
-			"calc": {
-				"level": 12,
-				"rsl": "IQ-1"
-			},
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -5
-				}
-			],
-			"categories": [
-				"Everyman",
-				"Outdoor/Exploration"
-			]
-		},
-		{
-			"type": "skill",
-			"id": "6a32fd25-b317-4576-907b-4cc66d491189",
-			"name": "Navigation",
-			"reference": "B211",
-			"specialization": "Land",
-			"tech_level": "4",
-			"difficulty": "iq/a",
-			"points": 1,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -5,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
-			},
-			"calc": {
-				"level": 12,
-				"rsl": "IQ-1"
-			},
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": "Cartography",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Mathematics",
-					"specialization": "Surveying",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Navigation",
-					"specialization": "Air",
-					"modifier": -2
-				},
-				{
-					"type": "skill",
-					"name": "Navigation",
-					"specialization": "Sea",
-					"modifier": -2
-				}
-			],
-			"categories": [
-				"Outdoor/Exploration",
-				"Technical",
-				"Vehicle"
-			]
-		},
-		{
-			"type": "skill",
-			"id": "d0c46793-4b27-4ae8-b316-a555ad015334",
-			"name": "Navigation",
-			"reference": "B211",
-			"specialization": "Sea",
-			"tech_level": "4",
-			"difficulty": "iq/a",
-			"points": 1,
-			"defaulted_from": {
-				"type": "skill",
-				"name": "Navigation",
-				"specialization": "Land",
-				"modifier": -2,
-				"level": 10,
-				"adjusted_level": 10,
-				"points": -10
-			},
-			"calc": {
-				"level": 12,
-				"rsl": "IQ-1"
-			},
-			"defaults": [
-				{
-					"type": "skill",
-					"name": "Astronomy",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": "Seamanship",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": "Navigation",
-					"specialization": "Air",
-					"modifier": -2
-				},
-				{
-					"type": "skill",
-					"name": "Navigation",
-					"specialization": "Land",
-					"modifier": -2
-				}
-			],
-			"categories": [
-				"Outdoor/Exploration",
-				"Technical",
-				"Vehicle"
-			]
-		},
-		{
-			"type": "skill",
-			"id": "9624c6ab-74fd-4dbe-8bd9-a37ca22bc356",
-			"name": "Brawling",
-			"reference": "B182,MA55",
-			"difficulty": "dx/e",
-			"points": 1,
 			"calc": {
 				"level": 11,
-				"rsl": "DX+0"
+				"rsl": "IQ-2"
 			},
-			"features": [
+			"defaults": [
 				{
-					"type": "weapon_bonus",
-					"amount": 1,
-					"per_level": true,
-					"selection_type": "weapons_with_required_skill",
-					"name": {
-						"compare": "is",
-						"qualifier": "Brawling"
-					},
-					"level": {
-						"compare": "at_least",
-						"qualifier": 2
-					}
+					"type": "iq",
+					"modifier": -7
 				}
 			],
 			"categories": [
-				"Combat/Weapon",
-				"Melee Combat"
+				"Occult/Magical"
 			]
 		},
 		{
@@ -2091,6 +2266,36 @@
 				"Athletic",
 				"Combat/Weapon",
 				"Ranged Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"id": "5855fc2a-3b12-4602-a0b3-0e20e413a955",
+			"name": "Weather Sense",
+			"reference": "B209",
+			"tech_level": "4",
+			"difficulty": "iq/a",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "IQ-1"
+			},
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Everyman",
+				"Outdoor/Exploration"
 			]
 		}
 	],
@@ -2128,6 +2333,23 @@
 				"rsl": "IQ+0"
 			},
 			"notes": "Air Jet\nKeywords: Jet, Obvious.\nFull Cost: 6 points/level.\nCasting Roll: None. Use Innate Attack (Beam) to hit.\nRange: 20 yards.\nDuration: Instantaneous.\nYou shoot a thin jet of air from your fingertip, which can\nstrike any target up to 20 yards away (without range or speed\npenalties). It can be dodged or blocked, but not parried. This\njet does 1d crushing damage per level, doubled, for the pur-\nposes of knockback only. It can also snuff out candles, sweep\nthe floor, and so on.\nAgainst enemies with Injury Tolerance (Diffuse), such as\ngaseous beings and swarms, this becomes a much more potent\nattack, doing full damage – including the doubling! Ignore the\nusual injury cap of 2 HP (Injury to Unliving, Homogenous, and\nDiffuse Targets, p. B380)."
+		},
+		{
+			"type": "spell",
+			"id": "b3889aea-4aff-45db-a83a-3cbf3d16c436",
+			"name": " Create Animal",
+			"difficulty": "iq/h",
+			"power_source": "Arcane",
+			"spell_class": "Regular",
+			"casting_cost": "1",
+			"casting_time": "1 sec",
+			"duration": "Instant",
+			"points": 4,
+			"calc": {
+				"level": 13,
+				"rsl": "IQ+0"
+			},
+			"notes": "\nKeywords: None.\nFull Cost: 23 points.\nCasting Roll: Will.\nRange: Touch.\nDuration: Hours equal to margin of success on the casting roll.\n\nCreate an animal (IQ 5 or less) that does your mental bidding while it exists. The animal appears within the arm’s reach. A living creation must be identical to a “real” living being with which the caster is familiar. You cannot create an imaginary being, or even a real creature of which you have only heard stories. Neither can you create a bear with poison fangs . . . but some wizards occasionally research private variations on the spell to make unusual creatures. At the end of the casting, you must pay 1 FP and make a Will roll to create the animal. If you are victorious, the created animal serves you for margin of success hours.\nCreate Animal may also be used to create a swarm of small creatures (p. B461).\nIf the animal is killed, the summoner must wait a full day to call replacements. Dismissing the animal is a free action, but you may only dismiss him if he is physically present. You can only cast this spell if your character’s point total is at least 2 times bigger than the animal’s.\nStatistics: Ally (Animal; Built on 50%; Constantly, no roll required; Adjustable, Animals, +50%; Conjured, +100%; Magical, -10%; Maximum Duration, hours equal to margin of success, -5%; Minion, +50%; Requires Will Roll, -5%) [23]. Notes: The Maximum Duration limitation is priced based on Maximum Duration, 12 hours. As a special effect, this spell breaks sorcery rules by allowing free maintenance, but this is offset by imposing a FP cost to cast."
 		},
 		{
 			"type": "spell",
@@ -2391,8 +2613,8 @@
 							"parry": "-1",
 							"block": "No",
 							"calc": {
-								"level": 7,
-								"parry": "6",
+								"level": 13,
+								"parry": "9",
 								"block": "No",
 								"damage": "1d-2 cut"
 							},
@@ -2439,8 +2661,8 @@
 							"parry": "-1",
 							"block": "No",
 							"calc": {
-								"level": 7,
-								"parry": "6",
+								"level": 13,
+								"parry": "9",
 								"block": "No",
 								"damage": "1d-2 imp"
 							},

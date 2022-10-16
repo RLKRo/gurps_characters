@@ -535,7 +535,7 @@
 		}
 	},
 	"created_date": "Sep 17, 2022, 2:11 PM",
-	"modified_date": "Sep 24, 2022, 1:58 AM",
+	"modified_date": "Oct 16, 2022, 1:06 PM",
 	"profile": {
 		"player_name": "Egor",
 		"name": "Cornelius Hersberger",
@@ -604,17 +604,17 @@
 		},
 		{
 			"attr_id": "per",
-			"adj": 0,
+			"adj": 1,
 			"calc": {
-				"value": 13,
-				"points": 0
+				"value": 14,
+				"points": 5
 			}
 		},
 		{
 			"attr_id": "vision",
 			"adj": 0,
 			"calc": {
-				"value": 13,
+				"value": 14,
 				"points": 0
 			}
 		},
@@ -622,7 +622,7 @@
 			"attr_id": "hearing",
 			"adj": 0,
 			"calc": {
-				"value": 13,
+				"value": 14,
 				"points": 0
 			}
 		},
@@ -630,7 +630,7 @@
 			"attr_id": "taste_smell",
 			"adj": 0,
 			"calc": {
-				"value": 13,
+				"value": 14,
 				"points": 0
 			}
 		},
@@ -638,7 +638,7 @@
 			"attr_id": "touch",
 			"adj": 0,
 			"calc": {
-				"value": 13,
+				"value": 14,
 				"points": 0
 			}
 		},
@@ -670,16 +670,16 @@
 		},
 		{
 			"attr_id": "hp",
-			"adj": 0,
+			"adj": 2,
 			"damage": 0,
 			"calc": {
-				"value": 10,
-				"current": 10,
-				"points": 0
+				"value": 12,
+				"current": 12,
+				"points": 4
 			}
 		}
 	],
-	"total_points": 160,
+	"total_points": 164,
 	"advantages": [
 		{
 			"type": "advantage",
@@ -1867,12 +1867,12 @@
 			"defaulted_from": {
 				"type": "per",
 				"modifier": -5,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
-				"level": 13,
+				"level": 14,
 				"rsl": "Per+0"
 			},
 			"defaults": [
@@ -1892,7 +1892,7 @@
 			"name": "Diplomacy",
 			"reference": "B187",
 			"difficulty": "iq/h",
-			"points": 2,
+			"points": 4,
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -6,
@@ -1901,8 +1901,8 @@
 				"points": -7
 			},
 			"calc": {
-				"level": 12,
-				"rsl": "IQ-1"
+				"level": 13,
+				"rsl": "IQ+0"
 			},
 			"defaults": [
 				{
@@ -1931,12 +1931,12 @@
 			"defaulted_from": {
 				"type": "per",
 				"modifier": -4,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 13,
+				"level": 14,
 				"rsl": "Per+0"
 			},
 			"defaults": [
@@ -1984,7 +1984,7 @@
 			"name": "Writing",
 			"reference": "B228",
 			"difficulty": "iq/a",
-			"points": 1,
+			"points": 2,
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
@@ -1993,8 +1993,8 @@
 				"points": -8
 			},
 			"calc": {
-				"level": 12,
-				"rsl": "IQ-1"
+				"level": 13,
+				"rsl": "IQ+0"
 			},
 			"defaults": [
 				{
@@ -2019,9 +2019,9 @@
 				"type": "skill",
 				"name": "Writing",
 				"modifier": -3,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
 				"level": 15,

@@ -535,7 +535,7 @@
 		}
 	},
 	"created_date": "Sep 17, 2022, 8:07 PM",
-	"modified_date": "Sep 24, 2022, 4:43 PM",
+	"modified_date": "Oct 2, 2022, 1:45 PM",
 	"profile": {
 		"player_name": "Sergey",
 		"name": "Oliver Schwartzman",
@@ -2326,6 +2326,106 @@
 				"Camping and Survival Gear"
 			],
 			"open": true
+		},
+		{
+			"type": "equipment",
+			"id": "17c683ee-8ac2-48cf-bfdd-40bb79126cf1",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Dagger",
+			"tech_level": "1",
+			"value": "20",
+			"weight": "0.25 lb",
+			"reference": "B272",
+			"weapons": [
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "imp",
+						"st": "thr",
+						"base": "-1"
+					},
+					"strength": "5",
+					"usage": "Thrust",
+					"reach": "C",
+					"parry": "-1",
+					"block": "No",
+					"calc": {
+						"level": 8,
+						"parry": "9",
+						"block": "No",
+						"damage": "1d imp"
+					},
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Knife"
+						},
+						{
+							"type": "skill",
+							"name": "Force Sword",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Main-Gauche",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Shortsword",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Sword!"
+						}
+					]
+				},
+				{
+					"type": "ranged_weapon",
+					"damage": {
+						"type": "imp",
+						"st": "thr",
+						"base": "-1"
+					},
+					"strength": "5",
+					"usage": "Thrown",
+					"accuracy": "+0",
+					"range": "x0.5/x1",
+					"rate_of_fire": "1",
+					"shots": "T(1)",
+					"bulk": "-1",
+					"calc": {
+						"level": 8,
+						"range": "8/16",
+						"damage": "1d imp"
+					},
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Thrown Weapon",
+							"specialization": "Knife"
+						}
+					]
+				}
+			],
+			"calc": {
+				"extended_value": "20",
+				"extended_weight": "0.25 lb"
+			},
+			"categories": [
+				"Melee Weapon",
+				"Missile Weapon"
+			]
 		}
 	],
 	"calc": {
